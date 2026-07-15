@@ -1,0 +1,13 @@
+print("=====Welcome to the simple password generator!=====")
+import random
+letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+numbers = "0123456789"
+symbols = "!@#$%^&*()_+-=[]{}|;:',.<>?/"
+all_characters = letters + numbers + symbols
+length = int(input("Enter the length of the password: "))
+password = ""
+for i in range(length):
+    password += random.choice(all_characters)
+
+print("Generated password: " , password)
+print("Your password has been generated successfully!")
